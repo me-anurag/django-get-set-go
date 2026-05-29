@@ -1,7 +1,5 @@
 # Django Learning Path
 
-My step-by-step journey learning Django — updated as I go.
-
 ![Learning Path](django-path.svg)
 
 ## Lessons
@@ -9,7 +7,8 @@ My step-by-step journey learning Django — updated as I go.
 | # | Topic | Status |
 |---|-------|--------|
 | 1 | Django setup | ✅ Done |
-| 2 | Python & Django files | 🔜 Next |
+| 2 | Python & Django files | ✅ Done |
+| 3 | Coming soon | ⬜ |
 
 ---
 
@@ -28,6 +27,9 @@ python manage.py runserver
 - `settings.py` — all project config lives here
 - `urls.py` — URL routing
 - `views.py` — logic that handles requests
+- `from django.db import models`
+- `from django.http import HttpResponse`
+- `from django.urls import path`
 
 ---
 
