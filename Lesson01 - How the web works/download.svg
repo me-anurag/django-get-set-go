@@ -1,0 +1,81 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"></stop>
+      <stop offset="100%" stop-color="#111827"></stop>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"></stop>
+      <stop offset="100%" stop-color="#14b8a6"></stop>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg)"></rect>
+
+  <!-- Network Connections -->
+  <g stroke="#334155" stroke-width="2">
+    <line x1="180" y1="120" x2="350" y2="200"></line>
+    <line x1="350" y1="200" x2="600" y2="120"></line>
+    <line x1="600" y1="120" x2="850" y2="220"></line>
+    <line x1="850" y1="220" x2="1020" y2="140"></line>
+    <line x1="600" y1="120" x2="600" y2="280"></line>
+    <line x1="350" y1="200" x2="600" y2="280"></line>
+    <line x1="850" y1="220" x2="600" y2="280"></line>
+  </g>
+
+  <!-- Nodes -->
+  <g filter="url(#glow)">
+    <circle cx="180" cy="120" r="14" fill="#38bdf8"></circle>
+    <circle cx="350" cy="200" r="14" fill="#38bdf8"></circle>
+    <circle cx="600" cy="120" r="18" fill="#14b8a6"></circle>
+    <circle cx="850" cy="220" r="14" fill="#38bdf8"></circle>
+    <circle cx="1020" cy="140" r="14" fill="#38bdf8"></circle>
+    <circle cx="600" cy="280" r="18" fill="#14b8a6"></circle>
+  </g>
+
+  <!-- Browser Window -->
+  <g transform="translate(90,250)">
+    <rect width="140" height="90" rx="12" fill="#1e293b" stroke="#475569"></rect>
+    <rect width="140" height="20" fill="#334155"></rect>
+    <circle cx="15" cy="10" r="4" fill="#ef4444"></circle>
+    <circle cx="30" cy="10" r="4" fill="#f59e0b"></circle>
+    <circle cx="45" cy="10" r="4" fill="#22c55e"></circle>
+  </g>
+
+  <!-- Server Rack -->
+  <g transform="translate(930,240)">
+    <rect width="120" height="110" rx="10" fill="#1e293b" stroke="#475569"></rect>
+
+    <rect x="15" y="20" width="90" height="18" rx="4" fill="#334155"></rect>
+    <rect x="15" y="50" width="90" height="18" rx="4" fill="#334155"></rect>
+    <rect x="15" y="80" width="90" height="18" rx="4" fill="#334155"></rect>
+
+    <circle cx="95" cy="29" r="3" fill="#22c55e"></circle>
+    <circle cx="95" cy="59" r="3" fill="#22c55e"></circle>
+    <circle cx="95" cy="89" r="3" fill="#22c55e"></circle>
+  </g>
+
+  <!-- Title -->
+  <text x="300" y="170" fill="white" font-size="64" font-family="Segoe UI, Arial, sans-serif" font-weight="800">
+    How the Web Works
+  </text>
+
+  <!-- Subtitle -->
+  <text x="300" y="220" fill="#94a3b8" font-size="26" font-family="Segoe UI, Arial, sans-serif">
+    From browser requests to servers, DNS, HTTP and beyond
+  </text>
+
+  <!-- Accent Line -->
+  <rect x="300" y="255" width="500" height="6" rx="3" fill="url(#accent)"></rect>
+</svg>
