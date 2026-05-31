@@ -11,6 +11,13 @@
       <stop offset="100%" stop-color="#06b6d4"></stop>
     </linearGradient>
 
+    <style>
+      .title { font-family: Arial; fill: #ffffff; font-size: 54px; font-weight: 700; }
+      .label { font-family: Arial; fill: #cbd5e1; font-size: 18px; }
+      .sub { font-family: Arial; fill: #94a3b8; font-size: 20px; }
+      .small { font-family: Arial; fill: #94a3b8; font-size: 16px; }
+    </style>
+
     <filter id="glow">
       <feGaussianBlur stdDeviation="6" result="blur"></feGaussianBlur>
       <feMerge>
@@ -18,57 +25,52 @@
         <feMergeNode in="SourceGraphic"></feMergeNode>
       </feMerge>
     </filter>
-
-    <style>
-      .label { font-family: Arial, sans-serif; fill: #cbd5e1; font-size: 16px; }
-      .title { font-family: Arial, sans-serif; fill: #ffffff; font-size: 54px; font-weight: 700; }
-      .sub { font-family: Arial, sans-serif; fill: #94a3b8; font-size: 22px; }
-    </style>
   </defs>
 
   <!-- Background -->
   <rect width="1200" height="400" fill="url(#bg)"></rect>
 
-  <!-- Execution engine (bottom layer) -->
-  <rect x="250" y="280" width="700" height="70" rx="14" fill="#111827" stroke="#334155"></rect>
-
-  <text x="600" y="325" text-anchor="middle" class="label">
-    Runtime / Server / OS
-  </text>
-
-  <!-- Framework layer -->
-  <rect x="200" y="180" width="800" height="90" rx="16" fill="url(#framework)" filter="url(#glow)"></rect>
-
-  <text x="600" y="235" text-anchor="middle" class="label" fill="#0b1220" font-weight="bold">
-    FRAMEWORK (Django / Flask / etc.)
-  </text>
-
-  <!-- App layer -->
-  <rect x="260" y="90" width="680" height="70" rx="14" fill="#1f2937" stroke="#475569"></rect>
-
-  <text x="600" y="135" text-anchor="middle" class="label">
-    Your Application Code
-  </text>
-
-  <!-- Flow arrows -->
-  <g stroke="#38bdf8" stroke-width="3" opacity="0.8">
-    <line x1="600" y1="160" x2="600" y2="180"></line>
-    <line x1="600" y1="270" x2="600" y2="280"></line>
-  </g>
-
-  <!-- Side explanation -->
-  <text x="80" y="140" class="sub">You write code</text>
-  <text x="80" y="170" class="sub">Framework controls flow</text>
-  <text x="80" y="200" class="sub">System executes it</text>
-
   <!-- Title -->
-  <text x="600" y="55" text-anchor="middle" class="title">
+  <text x="600" y="60" text-anchor="middle" class="title">
     What is a Framework?
   </text>
 
-  <!-- Subtitle -->
-  <text x="600" y="380" text-anchor="middle" class="sub">
-    A structure that controls how your application runs
+  <!-- Diagram center alignment guide (invisible concept) -->
+  <!-- App layer -->
+  <rect x="300" y="100" width="600" height="60" rx="12" fill="#1f2937" stroke="#475569"></rect>
+
+  <text x="600" y="138" text-anchor="middle" class="label">
+    Your Application Code
+  </text>
+
+  <!-- Framework layer -->
+  <rect x="250" y="180" width="700" height="80" rx="14" fill="url(#framework)" filter="url(#glow)"></rect>
+
+  <text x="600" y="230" text-anchor="middle" fill="#0b1220" font-size="18" font-family="Arial" font-weight="700">
+    FRAMEWORK (Django / Flask / etc.)
+  </text>
+
+  <!-- Runtime layer -->
+  <rect x="300" y="280" width="600" height="60" rx="12" fill="#111827" stroke="#334155"></rect>
+
+  <text x="600" y="318" text-anchor="middle" class="label">
+    Runtime / Server / OS
+  </text>
+
+  <!-- Flow arrows -->
+  <g stroke="#38bdf8" stroke-width="2" opacity="0.8">
+    <line x1="600" y1="160" x2="600" y2="180"></line>
+    <line x1="600" y1="260" x2="600" y2="280"></line>
+  </g>
+
+  <!-- Side explanation (moved OUTSIDE blocks safely) -->
+  <text x="40" y="140" class="sub">You write code</text>
+  <text x="40" y="170" class="sub">Framework controls flow</text>
+  <text x="40" y="200" class="sub">System executes it</text>
+
+  <!-- Bottom explanation -->
+  <text x="600" y="375" text-anchor="middle" class="small">
+    Framework = structure that runs and organizes your application
   </text>
 
 </svg>
