@@ -1,0 +1,77 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b14"></stop>
+      <stop offset="100%" stop-color="#0f172a"></stop>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22c55e"></stop>
+      <stop offset="100%" stop-color="#06b6d4"></stop>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <style>
+      .title { font-family: Arial; font-size: 56px; fill: #ffffff; font-weight: 700; }
+      .label { font-family: Arial; font-size: 18px; fill: #cbd5e1; }
+      .small { font-family: Arial; font-size: 16px; fill: #94a3b8; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg)"></rect>
+
+  <!-- Title -->
+  <text x="600" y="70" text-anchor="middle" class="title">
+    Django MTV Pattern
+  </text>
+
+  <!-- Flow line -->
+  <line x1="180" y1="200" x2="1020" y2="200" stroke="url(#accent)" stroke-width="3" opacity="0.6"></line>
+
+  <!-- Model -->
+  <g>
+    <rect x="160" y="150" width="200" height="120" rx="12" fill="#111827" stroke="#334155"></rect>
+    <text x="260" y="185" text-anchor="middle" class="label">MODEL</text>
+    <text x="260" y="215" text-anchor="middle" class="small">Database</text>
+    <text x="260" y="240" text-anchor="middle" class="small">Data Logic</text>
+  </g>
+
+  <!-- Template -->
+  <g>
+    <rect x="420" y="150" width="200" height="120" rx="12" fill="#111827" stroke="#334155"></rect>
+    <text x="520" y="185" text-anchor="middle" class="label">TEMPLATE</text>
+    <text x="520" y="215" text-anchor="middle" class="small">HTML UI</text>
+    <text x="520" y="240" text-anchor="middle" class="small">Presentation</text>
+  </g>
+
+  <!-- View -->
+  <g filter="url(#glow)">
+    <rect x="680" y="150" width="200" height="120" rx="12" fill="url(#accent)"></rect>
+    <text x="780" y="185" text-anchor="middle" fill="#0b1220" font-size="18" font-weight="700">VIEW</text>
+    <text x="780" y="215" text-anchor="middle" fill="#0b1220" font-size="14">Logic Layer</text>
+    <text x="780" y="240" text-anchor="middle" fill="#0b1220" font-size="14">Controller</text>
+  </g>
+
+  <!-- Response -->
+  <g>
+    <rect x="940" y="150" width="200" height="120" rx="12" fill="#111827" stroke="#334155"></rect>
+    <text x="1040" y="185" text-anchor="middle" class="label">RESPONSE</text>
+    <text x="1040" y="215" text-anchor="middle" class="small">Output</text>
+    <text x="1040" y="240" text-anchor="middle" class="small">Browser</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="600" y="340" text-anchor="middle" class="small">
+    Django processes requests using the MTV architecture
+  </text>
+
+</svg>
