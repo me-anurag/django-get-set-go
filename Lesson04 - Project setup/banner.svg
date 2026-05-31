@@ -1,0 +1,80 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1220"></stop>
+      <stop offset="100%" stop-color="#0f172a"></stop>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22c55e"></stop>
+      <stop offset="100%" stop-color="#06b6d4"></stop>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <style>
+      .title { font-family: Arial; fill: #ffffff; font-size: 56px; font-weight: 700; }
+      .label { font-family: Arial; fill: #cbd5e1; font-size: 16px; }
+      .small { font-family: Arial; fill: #94a3b8; font-size: 15px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg)"></rect>
+
+  <!-- Title -->
+  <text x="600" y="70" text-anchor="middle" class="title">
+    Django Project Setup
+  </text>
+
+  <!-- Flow line -->
+  <line x1="180" y1="200" x2="1020" y2="200" stroke="url(#accent)" stroke-width="4" opacity="0.8"></line>
+
+  <!-- Step 1 -->
+  <g>
+    <circle cx="220" cy="200" r="28" fill="#1f2937" stroke="#334155"></circle>
+    <text x="220" y="206" text-anchor="middle" class="label">1</text>
+    <text x="220" y="255" text-anchor="middle" class="small">Python venv</text>
+  </g>
+
+  <!-- Step 2 -->
+  <g>
+    <circle cx="420" cy="200" r="28" fill="#1f2937" stroke="#334155"></circle>
+    <text x="420" y="206" text-anchor="middle" class="label">2</text>
+    <text x="420" y="255" text-anchor="middle" class="small">Install Django</text>
+  </g>
+
+  <!-- Step 3 -->
+  <g>
+    <circle cx="620" cy="200" r="28" fill="#1f2937" stroke="#334155"></circle>
+    <text x="620" y="206" text-anchor="middle" class="label">3</text>
+    <text x="620" y="255" text-anchor="middle" class="small">Start Project</text>
+  </g>
+
+  <!-- Step 4 -->
+  <g filter="url(#glow)">
+    <circle cx="820" cy="200" r="28" fill="url(#accent)"></circle>
+    <text x="820" y="206" text-anchor="middle" fill="#0b1220" font-size="16" font-family="Arial" font-weight="700">✓</text>
+    <text x="820" y="255" text-anchor="middle" class="small">Run Server</text>
+  </g>
+
+  <!-- Step 5 -->
+  <g>
+    <circle cx="1020" cy="200" r="28" fill="#1f2937" stroke="#334155"></circle>
+    <text x="1020" y="206" text-anchor="middle" class="label">5</text>
+    <text x="1020" y="255" text-anchor="middle" class="small">Ready for Apps</text>
+  </g>
+
+  <!-- Django note -->
+  <text x="600" y="340" text-anchor="middle" class="small">
+    Setting up a Django project from environment to first server run
+  </text>
+
+</svg>
