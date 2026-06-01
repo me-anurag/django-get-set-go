@@ -1,0 +1,21 @@
+<svg width="1200" height="300" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="300" fill="#0F172A"></rect>
+
+<rect x="110" y="90" width="140" height="120" rx="12" fill="#F59E0B"></rect>
+
+<path d="M280 150 L380 150" stroke="#F59E0B" stroke-width="6"></path>
+
+<rect x="400" y="90" width="140" height="120" rx="12" fill="#FBBF24"></rect>
+
+<text x="600" y="120" fill="white" font-size="52" font-weight="700">
+Models &amp; Migrations
+</text>
+
+<text x="600" y="180" fill="#CBD5E1" font-size="24">
+Creating Database Structures
+</text>
+
+<text x="600" y="225" fill="#F59E0B" font-size="18">
+Lesson 10
+</text>
+</svg>
