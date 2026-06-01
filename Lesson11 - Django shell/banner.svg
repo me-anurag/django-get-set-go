@@ -1,0 +1,25 @@
+<svg width="1200" height="300" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="300" fill="#020617"></rect>
+
+<rect x="90" y="70" width="320" height="160" rx="12" fill="#111827"></rect>
+
+<text x="120" y="140" fill="#22C55E" font-size="32">
+&gt;&gt;&gt;
+</text>
+
+<text x="120" y="190" fill="#E2E8F0" font-size="26">
+Model.objects.all()
+</text>
+
+<text x="500" y="125" fill="white" font-size="52" font-weight="700">
+Django Shell
+</text>
+
+<text x="500" y="180" fill="#94A3B8" font-size="24">
+Interactive ORM Playground
+</text>
+
+<text x="500" y="225" fill="#22C55E" font-size="18">
+Lesson 11
+</text>
+</svg>
