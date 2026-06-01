@@ -1,0 +1,20 @@
+<svg width="1200" height="300" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="300" fill="#0F172A"></rect>
+
+<rect x="100" y="80" width="220" height="140" rx="12" fill="#10B981"></rect>
+
+<rect x="130" y="110" width="160" height="20" fill="white"></rect>
+<rect x="130" y="150" width="120" height="20" fill="white"></rect>
+
+<text x="400" y="120" fill="white" font-size="52" font-weight="700">
+Admin Panel
+</text>
+
+<text x="400" y="180" fill="#CBD5E1" font-size="24">
+Managing Models Through Django Admin
+</text>
+
+<text x="400" y="225" fill="#10B981" font-size="18">
+Lesson 15
+</text>
+</svg>
