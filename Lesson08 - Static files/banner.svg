@@ -1,0 +1,18 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="300" fill="#0F172A"></rect>
+
+  <circle cx="180" cy="150" r="70" fill="#22C55E" opacity="0.2"></circle>
+  <rect x="140" y="110" width="80" height="80" rx="10" fill="#22C55E"></rect>
+
+  <text x="320" y="125" fill="#F8FAFC" font-size="52" font-family="Segoe UI" font-weight="700">
+    Static Files
+  </text>
+
+  <text x="320" y="180" fill="#94A3B8" font-size="24" font-family="Segoe UI">
+    CSS • JavaScript • Images • Asset Management
+  </text>
+
+  <text x="320" y="225" fill="#22C55E" font-size="18">
+    Lesson 08
+  </text>
+</svg>
