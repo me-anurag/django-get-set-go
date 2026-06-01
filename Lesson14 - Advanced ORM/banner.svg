@@ -1,0 +1,19 @@
+<svg width="1200" height="300" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="300" fill="#020617"></rect>
+
+<circle cx="160" cy="150" r="70" fill="#EC4899"></circle>
+
+<path d="M130 150 H190 M160 120 V180" stroke="white" stroke-width="8"></path>
+
+<text x="320" y="120" fill="white" font-size="52" font-weight="700">
+Advanced ORM
+</text>
+
+<text x="320" y="180" fill="#CBD5E1" font-size="24">
+Annotations • Aggregations • Optimization
+</text>
+
+<text x="320" y="225" fill="#EC4899" font-size="18">
+Lesson 14
+</text>
+</svg>
