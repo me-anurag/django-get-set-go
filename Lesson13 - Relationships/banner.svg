@@ -1,0 +1,22 @@
+<svg width="1200" height="300" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="300" fill="#111827"></rect>
+
+<rect x="80" y="100" width="120" height="80" rx="8" fill="#06B6D4"></rect>
+<rect x="320" y="100" width="120" height="80" rx="8" fill="#06B6D4"></rect>
+<rect x="560" y="100" width="120" height="80" rx="8" fill="#06B6D4"></rect>
+
+<line x1="200" y1="140" x2="320" y2="140" stroke="white" stroke-width="5"></line>
+<line x1="440" y1="140" x2="560" y2="140" stroke="white" stroke-width="5"></line>
+
+<text x="760" y="120" fill="white" font-size="52" font-weight="700">
+Relationships
+</text>
+
+<text x="760" y="180" fill="#CBD5E1" font-size="24">
+One-to-One • One-to-Many • Many-to-Many
+</text>
+
+<text x="760" y="225" fill="#06B6D4" font-size="18">
+Lesson 13
+</text>
+</svg>
